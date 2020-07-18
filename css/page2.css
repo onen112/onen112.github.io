@@ -1,0 +1,14 @@
+.thead th{
+    text-align: center;
+}
+.main{
+    margin-top: 20px;
+}
+
+.table_border{
+    margin-top: 20px;
+}
+
+.table_body{
+    background-color: white;
+}
