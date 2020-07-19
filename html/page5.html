@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/page5.css">
 </head>
 <body>
 <div class="header_top col-md-12">
@@ -29,5 +30,48 @@
     </div>
     <div class="col-md-1"></div>
 </div>
+
+
+<div class="col-md-12 ">
+    <div class="col-md-10 login_title col-md-offset-1">
+        <h2>注册</h2>
+    </div>
+    <div class="input_login col-md-10 login_box col-md-offset-1">
+        <form  class="form-horizontal">
+            <div class="form-group row">
+                <div class="col-md-2 user col-md-offset-5">
+                    <p>请输入用户名:</p>
+                    <input type="text" class="form-control" placeholder="请输入：">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2 user col-md-offset-5">
+                    <p>请输入密码:</p>
+                    <input type="password" class="form-control" placeholder="请输入：" v-model="password_1">
+                </div>
+            </div>
+            <div class="form-group" v-bind:class="error">
+                <div class="col-md-2 user col-md-offset-5">
+                    <p >{{enterPW}}</p>
+                    <input type="password" class="form-control" placeholder="请输入：" v-model="password_2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-5">
+
+                    <div class="login_b" style="float: left">
+                        <button @click="click" type="button" class="btn btn-primary">完成</button>
+                    </div>
+                    <div class="have">已有账号？<a href="page4.html">去登录</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1"></div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../js/page5.js"></script>
 </body>
-</html
+</html>

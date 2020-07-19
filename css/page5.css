@@ -9,15 +9,14 @@
 
 }
 
-.input_login .user
-{
-    margin-top: 15px;
-}
-
 .login_btn button{
     /*display: inline-block;*/
     margin: 0 auto;
 }
 .login_c{
     float: left;
+}
+.have{
+    float: right;
+    line-height: 34px;
 }
