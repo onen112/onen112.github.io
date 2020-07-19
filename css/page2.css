@@ -8,7 +8,10 @@
 .table_border{
     margin-top: 20px;
 }
-
-.table_body{
-    background-color: white;
+.thead{
+    background-color: #337ab7;
+    color: #fff;
+}
+#tname{
+    color: #6091ba;
 }
