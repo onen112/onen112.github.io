@@ -9,6 +9,7 @@ var page5 = new Vue({
     },
     methods:{
         errorF:function () {
+
             if(this.password_1 != "" && this.password_2 !=""){
                 if(this.password_1 !== this.password_2){
                     this.isError = true;
@@ -28,15 +29,11 @@ var page5 = new Vue({
         click:function () {
                 alert("注册失败，并且不想告诉你为啥失败！");
 
-        }
+        },
     },
-    mounted(){
-        window.chackerr = this.errorF;
-    }
+
 })
 
 
-window.setInterval(function () {
-    window.chackerr();
-},300)
+
 
