@@ -1,0 +1,30 @@
+{
+  "class_inf": [
+    {
+      "class": [
+        { "name": "张三", "gender": "男", "age": 19, "class": "三年一班" },
+        { "name": "李四", "gender": "女", "age": 18, "class": "三年一班" },
+        { "name": "王五", "gender": "男", "age": 18, "class": "三年一班" },
+        { "name": "王麻子", "gender": "男", "age": 19, "class": "三年一班" }
+      ]
+    },
+    {
+      "class": [
+        { "name": "小韦", "gender": "男", "age": 19, "class": "三年二班" },
+        { "name": "小韦", "gender": "男", "age": 19, "class": "三年二班" },
+        { "name": "小韦", "gender": "男", "age": 19, "class": "三年二班" },
+        { "name": "小韦", "gender": "男", "age": 19, "class": "三年二班" },
+        { "name": "小韦", "gender": "男", "age": 19, "class": "三年二班" }
+      ]
+    },
+    {
+      "class": [
+        { "name": "onen", "gender": "男", "age": 19, "class": "三年三班" },
+        { "name": "onen", "gender": "男", "age": 19, "class": "三年三班" },
+        { "name": "onen", "gender": "男", "age": 19, "class": "三年三班" },
+        { "name": "onen", "gender": "男", "age": 19, "class": "三年三班" },
+        { "name": "onen", "gender": "男", "age": 19, "class": "三年三班" }
+      ]
+    }
+  ]
+}
