@@ -1,5 +1,5 @@
 var notice = new Vue({
-    el:".notice",
+    el:".com_inf",
     data:{
         noticeArr:[
             {title:"2021年世界锦标赛及2022年洲际锦标赛申办",time:"2020-07-09",admin:"赵天愉",
@@ -39,17 +39,13 @@ var notice = new Vue({
                     "\n" +
                     "我们向大家公布新的比赛安全政策，并希望所有WCA工作人员和参赛选手都能在比赛恢复时阅读并熟悉新政策。所有比赛都应遵守该政策，直到WCA董事会将其撤回。为了保证未来的比赛能够成功举办，各位参赛选手和工作人员的安全是极为重要的。尽管比赛会有所不同，我们仍然希望大家能够享受比赛的乐趣。如果你对新的政策有任何疑问，请与我们沟通。",
             }
-        ]
-    }
-})
-var notice_secondary = new Vue({
-    el:".notice_secondary",
-    data: {
+        ],
+        isShow:true,
         noticeArr2:[
             {title:"COVID-19情况更新",
-            time:"2020-04-09",
+                time:"2020-04-09",
 
-            admin:"赵天愉",
+                admin:"赵天愉",
                 main:"基于过去几周COVID-19疫情的发展以及对全球抗疫的支持，董事会一致同意加强对比赛的管控。\n" +
                     "</br>" +
                     "所有已公示的比赛，若其开始日期为2020年5月31日前或更早，将会被立刻取消。另外，新批准的比赛的开始日期必须为2020年6月1日或更晚。\n" +
@@ -63,15 +59,12 @@ var notice_secondary = new Vue({
                 time: "2020-01-26",
                 admin: "董百强",
                 main: "2020WCA中国魔方锦标赛将于2020年8月14日至16日在山东济南举行。在线报名将于02月01日 00:00开放，请点击比赛网站报名及查阅更多相关信息。"
-            }
-            ]
-    },
-})
+            },
 
-var border = new Vue({
-    el:".border",
-    data:{
-        isShow:true,
+        ],
+        showNotic:[
+            true,false
+        ],
     },
     methods:{
         width:function () {
@@ -79,13 +72,16 @@ var border = new Vue({
             if(innerWidth <= 980){
                 this.isShow = false;
             }
-        }
-    },
-    watch:{
+            else{
+                this.isShow = true;
+            }
+        },
+
+
     },
     mounted(){
-      window.width = this.width;
+        window.width = this.width;
     }
 })
 
-width();
+

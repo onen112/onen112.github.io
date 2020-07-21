@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
@@ -9,6 +8,8 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/iconfont.css">
 </head>
+
+<body  onresize="window.width()">
 <div class="all col-md-12">
 <div class="header_top col-md-10">
     <div class="col-md-1"></div>
@@ -32,37 +33,37 @@
     </div>
 </div>
 
-<div class="col-md-12 border">
-    <div class="col-md-3 event" v-show="isShow">
-        <div class="event_title col-md-8">近期赛事</div>
-        <div class="list-group col-md-8" >
-            <a href="#" class="list-group-item">WCA西安工程大学公开赛</a>
-            <a href="#" class="list-group-item">西安高校联赛</a>
-            <a href="#" class="list-group-item">WCA西安公开赛</a>
-            <a href="#" class="list-group-item">WCA洲际锦标赛</a>
+<div class="com_inf">
+    <div class="col-md-12 border" >
+        <div class="col-md-3 event" v-show="isShow">
+            <div class="event_title col-md-8">近期赛事</div>
+            <div class="list-group col-md-8" >
+                <a href="#" class="list-group-item">WCA西安工程大学公开赛</a>
+                <a href="#" class="list-group-item">西安高校联赛</a>
+                <a href="#" class="list-group-item">WCA西安公开赛</a>
+                <a href="#" class="list-group-item">WCA洲际锦标赛</a>
+            </div>
         </div>
-    </div>
-    <div class="notice col-md-9 container-fluid" >
+        <div class="notice col-md-9 container-fluid" v-show="showNotic[0]">
         <div class="notic_main col-md-12" v-for="item in noticeArr">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" >
-            <div class="notice_top panel panel-primary col-md-11">
-                <div class="panel-heading">
-                    {{item.title}}</div>
-                <div class="panel-body">
-                    <div class="main_top">
-                        <span class="time"><span class="iconfont icon-shijian">{{item.time}}</span></span>
-                        <span class="admin"><span class="iconfont icon-yonghu"></span>{{item.admin}}</span>
+            <div class="col-md-1"></div>
+            <div class="col-md-10" >
+                <div class="notice_top panel panel-primary col-md-11">
+                    <div class="panel-heading">
+                        {{item.title}}</div>
+                        <div class="panel-body">
+                            <div class="main_top">
+                            <span class="time"><span class="iconfont icon-shijian">{{item.time}}</span></span>
+                            <span class="admin"><span class="iconfont icon-yonghu"></span>{{item.admin}}</span>
+                        </div>
+                        <div class="main" v-html="item.main"></div>
                     </div>
-                    <div class="main" v-html="item.main"></div>
                 </div>
+            </div>
             </div>
         </div>
 
-        </div>
-</div>
-
-<div class="notice_secondary col-md-12 container-fluid" >
+<div class="notice_secondary col-md-12 container-fluid" v-show="showNotic[0]">
     <div class="notic_main col-md-9" v-for="item in noticeArr2">
         <div class="col-md-1"></div>
         <div class="col-md-10" >
@@ -84,25 +85,8 @@
 
 
 </div>
-<nav aria-label="Page navigation" class="col-md-12">
-    <div class="col-md-3"></div>
-    <ul class="pagination">
-        <li class="disabled">
-            <a href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li class="disabled">
-            <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="../js/index.js"></script>

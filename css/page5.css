@@ -2,7 +2,7 @@
     color: #6091ba;
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .input_login{
@@ -19,4 +19,7 @@
 .have{
     float: right;
     line-height: 34px;
+}
+.class_box{
+    margin-top: 20px;
 }
