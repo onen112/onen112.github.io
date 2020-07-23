@@ -38,6 +38,7 @@ var notice = new Vue({
     window.width = this.width;
     window.test = this.test;
   },
+  created(){
+    this.test();
+  }
 });
-
-test();

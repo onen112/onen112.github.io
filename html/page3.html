@@ -70,5 +70,23 @@
       </div>
       <div class="col-md-1"></div>
     </div>
+  <div class="col-md-12 help" >
+    <div class="col-md-8 col-md-offset-1">
+      <div class="panel panel-info" v-for="(item,index) in helpArr">
+        <div class="panel-heading" @click="change(index)">
+          <span class="iconfont" v-bind:class="isMore[index]?'icon-jian':'icon-jia'"></span>
+          <a href="##">
+          <span>{{item.q}}</span>
+          </a>
+        </div>
+        <div class="panel-body" v-html="item.a" v-if="isMore[index]">
+        </div>
+
+      </div>
+    </div>
+  </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/page3.js"></script>
 </html>
